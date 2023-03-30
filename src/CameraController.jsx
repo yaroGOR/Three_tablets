@@ -10,12 +10,12 @@ export const CameraController = () => {
       () => {
          const controls = new OrbitControls(camera, gl.domElement);
          
-         controls.enableZoom=true
-         controls.enablePan=true
-         controls.enableRotate=true
-         controls.zoomSpeed=0.6
-         controls.panSpeed=0.5
-         controls.rotateSpeed=0.4
+         // controls.enableZoom=true
+         // controls.enablePan=true
+         // controls.enableRotate=true
+         // controls.zoomSpeed=0.6
+         // controls.panSpeed=0.5
+         // controls.rotateSpeed=0.4
          controls.minDistance = 40;
          controls.maxDistance = 50;
          return () => {

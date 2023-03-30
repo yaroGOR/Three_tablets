@@ -88,7 +88,7 @@ export function Model(props) {
     fov = (2400 * 18) / window.innerWidth;
     camera.fov = fov;
     camera.updateProjectionMatrix();
-  }, []);
+  });
 
   const [open, setOpen] = useState([
     { id: 0, isOpen: false },
