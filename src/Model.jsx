@@ -79,16 +79,7 @@ export function Model(props) {
     metalness: 0.8,
   });
 
-  useEffect(() => {
-    camera.position.set(0, 15, 30);
-    camera.rotation.set(0, 0, Math.PI / 4);
-    scene.position.set(0, 0, 0);
-    let fov = camera.fov;
-    camera.rotation.set(-0.2, 0, 0);
-    fov = (2400 * 18) / window.innerWidth;
-    camera.fov = fov;
-    camera.updateProjectionMatrix();
-  });
+
 
   const [open, setOpen] = useState([
     { id: 0, isOpen: false },
