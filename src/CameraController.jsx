@@ -6,6 +6,9 @@ export const CameraController = () => {
    const {  gl } = useThree();
    const camera = useThree(state => state.camera)
 
+   camera.position.set(0, 15, 30);
+   camera.rotation.set(-Math.PI / 4, 0, 0);
+
    useEffect(
       () => {
          const controls = new OrbitControls(camera, gl.domElement);
